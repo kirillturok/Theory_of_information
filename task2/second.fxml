@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane alignment="CENTER" hgap="10.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller2">
+  <children>
+    <AnchorPane prefHeight="400.0" prefWidth="700.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <children>
+        <Label layoutX="296.0" layoutY="14.0" text="Исходный файл" />
+        <TextArea id="field_" fx:id="field_original" layoutX="14.0" layoutY="34.0" prefHeight="80.0" prefWidth="673.0" wrapText="true" />
+        <Label layoutX="331.0" layoutY="121.0" text="Ключ" />
+        <TextArea fx:id="field_key" layoutX="15.0" layoutY="148.0" prefHeight="80.0" prefWidth="671.0" wrapText="true" />
+        <Label layoutX="287.0" layoutY="239.0" text="Полученный файл" />
+        <TextArea fx:id="field_result" layoutX="14.0" layoutY="268.0" prefHeight="80.0" prefWidth="672.0" wrapText="true" />
+        <Button fx:id="button_close" layoutX="309.0" layoutY="359.0" mnemonicParsing="false" text="Закрыть" />
+      </children>
+    </AnchorPane>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>
